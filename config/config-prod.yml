@@ -1,0 +1,35 @@
+application:
+  name: bupda-bali
+  server: Production
+webserver:
+  port: 9300
+  timeout: 10 # in second
+  rate_limit: 10
+database:
+  tipe: core
+  driver: mysql
+  address: 117.53.45.238
+  username: temanbunda_compro
+  password: "*10eCAA8499F063AA22C5A73001E9A1F1199DFCa3"
+  port: 3306
+  name: eagle
+  maxidle: 10
+  maxopen: 10
+  maxidletime: 5
+  maxlifetime: 10
+  timeout: 5 # in second
+jwt:
+  verifykey: ea0bff0d3b53ebf44e86c1aa73622399
+  key: 05272d10caea3a554163da29c4c1a495   
+  tokenexpiredtime: 900 # in minute
+  refreshtokenexpiredtime: 365 # in days
+  formkey: b013f395535c437d29de536f34d66eb7
+  formtokenexpiredtime: 60
+timezone:
+  timezone: Asia/Makassar # Asia/Jakarta, Asia/Makassar, Asia/Jayapura
+log:
+  level: trace # trace, debug, info, warn, error, fatal, panic
+  levels:
+    - info
+    - warn
+    - error

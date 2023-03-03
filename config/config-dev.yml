@@ -1,0 +1,35 @@
+application:
+  name: bupda-bali
+  server: Development
+webserver:
+  port: 9300
+  timeout: 10 # in second
+  ratelimit: 10
+database:
+  tipe: core
+  driver: mysql
+  address: 117.53.44.216
+  username: thebest
+  password: thebest!@#$
+  port: 3306
+  name: dev_eagle
+  maxidle: 10
+  maxopen: 10
+  maxidletime: 5
+  maxlifetime: 10
+  timeout: 5 # in second
+jwt:
+  verifykey: hebat
+  key: secret   
+  tokenexpiredtime: 900 # in minute
+  refreshtokenexpiredtime: 365 # in days
+  formkey: rahasia
+  formtokenexpiredtime: 60
+timezone:
+  timezone: Asia/Makassar # Asia/Jakarta, Asia/Makassar, Asia/Jayapura
+log:
+  level: trace # trace, debug, info, warn, error, fatal, panic
+  levels:
+    - info
+    - warn
+    - error
